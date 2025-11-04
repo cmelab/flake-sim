@@ -27,13 +27,13 @@ Run the following in your terminal:
 
 Then, in order to run a small scale simulation, navigate to the sims/ directory:
 
-- clean_sim.ipynb = current working simulation you should use, shrink step is included allowing system to be packed loosely then shrunk to be dense, causing more interactions to occur
+- Onboarding.ipynb = current working simulation you should use, shrink step is included allowing system to be packed loosely then shrunk to be dense, causing more interactions to occur
 - clean_sim_with_randomwalk.ipynb = a future notebook, has a shrink step but also manipulates the geometry of the chains is randomly set so that we may set a dihedral to be something other than zero
 
 To analyze results, navigate to working_example/:
 
 - clustering_plots.ipynb = we use this to determine the magnitude of clustering over time in a simulation. this means both size and amount of clusters, also using independent samples
-- TPSvsN.ipynb = a notebook to graph TPS v. N
+- TPSvsN.ipynb = useful notebook for determining relationship between system size and timesteps per second, not included in the main workflow at the moment
 
 In order to run a large scale simulation, navigate to signac/:
 
