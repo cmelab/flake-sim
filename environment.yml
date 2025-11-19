@@ -4,5 +4,6 @@ channels:
   - nodefaults
 dependencies:
   - python=3.12
+  - jupyter
   - flowermd
   - ovito
