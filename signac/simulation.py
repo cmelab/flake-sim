@@ -22,16 +22,16 @@ warnings.filterwarnings("ignore")
 
 N_chains = 100          # number of polymer chains
 initial_dens = 0.001    # initial packing density
-final_dens = 0.15       # final packing density after shrink
+final_dens = 0.3       # final packing density after shrink
 N_flakes = 10           # number of flakes
-chain_length = 20       # chain length
+chain_length = 10       # chain length
 dt = 0.0005             # time step
-temp = 1.0              # kT for production run
+temp = 5.0              # kT for production run
 
-write_frequency = 20000                     # trajectory/log write frequency
+write_frequency = 50000                     # trajectory/log write frequency
 shrink_steps = int(1e6)                     # steps for shrink phase
 sim_start = int(shrink_steps / write_frequency)  # for analysis notebook
-steps = int(5e6)                            # steps for production NVT run
+steps = int(25e6)                            # steps for production NVT run
 flake_repeat = 5                            # number of lattice repeats in x,y for flakes
 
 
@@ -168,9 +168,9 @@ target_box = get_target_box_number_density(
 # Output filenames
 # ---------------------------------------------------------------------------
 
-gsd_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt.gsd"
-log_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt.txt"
-start_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt_start.txt"
+gsd_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt_{final_dens}_dens.gsd"
+log_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt_{final_dens}_dens.txt"
+start_file = f"{N_chains}_{chain_length}mer{N_flakes}f_{dt}dt_{final_dens}_dens_start.txt"
 
 
 # ---------------------------------------------------------------------------
