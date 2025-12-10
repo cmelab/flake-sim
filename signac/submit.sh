@@ -15,6 +15,6 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate flowermd-dev  # Replace with your environment name
 
 # Run the Python script
-python sim_with_shrink.py
+python simulation.py
 
 
